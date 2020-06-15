@@ -1,0 +1,79 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+#title {
+	text-align: center;
+	font-size: 1.75em;
+}
+
+section {
+	border: 2px solid black;
+	margin: 10px;
+	background-color: grey;
+}
+
+section h2 {
+	border: 2px solid black;
+	width: 200px;
+	padding: 5px;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.25em;
+	float: right;
+}
+
+section p {
+	width: 90%;
+	margin: auto auto 15px auto;
+	text-align: justify;
+	clear: both;
+}
+
+#chicken {
+	background-color: pink;
+	color: black;
+}
+
+#beef {
+	background-color: maroon;
+	color: white;
+}
+
+#sushi {
+	background-color: yellow;
+	color: black;
+}
+
+
+/**** FOR RESPONSIVE DESIGN ****/
+.row {
+	width: 100%;
+}
+
+@media (min-width: 992px) {
+	.col-dt-4 {
+		float: left;
+		width: 33.33%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-tb-6 {
+		float: left;
+		width: 50%;
+	}
+	.col-tb-12 {
+		float: left;
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.col-mb-12 {
+		float: left;
+		width: 100%;
+	}
+}
